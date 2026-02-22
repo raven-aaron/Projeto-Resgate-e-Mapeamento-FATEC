@@ -1,11 +1,27 @@
-Projeto Resgate e Mapeamento
+# Projeto Resgate e Mapeamento
 
-Plataforma web desenvolvida com foco na gestão municipal de animais perdidos e encontrados.
+Plataforma web desenvolvida como Trabalho com foco na gestão municipal de animais perdidos e encontrados.
 
-Tecnologias
+## Objetivo
+
+Centralizar registros de animais perdidos e encontrados, oferecendo:
+
+- Portal público com filtros de busca
+- Painel administrativo com visualização geográfica por hotspots
+- Apoio à tomada de decisão na gestão pública
+
+## Tecnologias Utilizadas
+
 - HTML5
 - CSS3
 - JavaScript (ES6+)
 
-Objetivo
-Centralizar registros de animais perdidos/encontrados e fornecer dashboard administrativo com visualização geográfica por hotspots.
+## Estrutura do Projeto
+
+/assets → imagens  
+/css → estilos  
+/js → scripts  
+
+## Status
+
+Versão acadêmica – FATEC
