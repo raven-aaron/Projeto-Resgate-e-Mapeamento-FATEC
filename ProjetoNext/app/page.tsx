@@ -2,6 +2,7 @@
 import { Button, Col, Row } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import { useRouter } from 'next/navigation';
+import styles from './page.module.css'
 
 export default function Home() {
   const router = useRouter();
@@ -11,7 +12,7 @@ export default function Home() {
       <Container>
         <Row>
           <Col>
-              <h1 className="titulo-destaque">PERDI O MEU PET</h1> <br /><br />
+              <h1 className={styles.tituloDestaque}>PERDI O MEU PET</h1> <br /><br />
               <div className="row align-items-center">
                 <div className="col-md-7 item-1">
                   <div className="textos">

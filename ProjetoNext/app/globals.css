@@ -3,6 +3,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* cores do html*/
+  --cor-verde-agua: #348888;
+  --cor-verde-agua-claro: #d5f1ef;
+  --cor-laranja: #FA7F08;
+  --cor-escuro: #2d2d2d;
+  --cor-cinza: #707070;
+  --cor-branco: #ffffff;
+  --cor-vermelho: #F24405;
+  --cor-verde-petroleo: #348888; 
+  --cor-ciano-medio: #22BABB; 
+  --cor-ciano-claro:#9EF8EE; 
+  --cor-laranja-vibrante: #FA7F08; 
+  --cor-laranja-avermelhado: #f24405;        
+  --bnt-laranja-vibrante-80: rgba(250, 127, 8, 0.8);
 }
 
 @theme inline {
@@ -23,4 +38,12 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/*do arquivo html*/
+* {
+    font-family: 'Outfit', 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
