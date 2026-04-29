@@ -15,7 +15,7 @@ export default function Home() {
               <h1 className={styles.tituloDestaque}>PERDI O MEU PET</h1> <br /><br />
               <div className="row align-items-center">
                 <div className="col-md-7 item-1">
-                  <div className="textos">
+                  <div className={sttextos}>
                     <p> Por meio de um mapa interativo, é possível cadastrar animais que seus tutores perderam 
                     ou pets que foram encontrados, permitindo que as informações fiquem disponíveis de 
                     forma rápida e acessível para todos.</p> 
@@ -26,6 +26,9 @@ export default function Home() {
                     <br /><br />
                     <Button variant="primary" onClick={() => router.push('/dashboard')} /*caminho registro-USER.html*/>ENCONTREI UM PET</Button>
                   </div>
+                </div>
+                <div className="col-md-5 item-2 text-center">
+                    <img id="cachorrogato" src="/assets/img/cachorrogatoinicial.jpg" className={`img-fluid  ${styles.imgBordaPadrao}`} />
                 </div>
               </div>
           </Col>

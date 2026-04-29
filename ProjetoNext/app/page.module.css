@@ -251,7 +251,7 @@
     font-weight: normal; font-size: 30px; margin-bottom: 5%;
 }
 
-.img-borda-padrao {
+.imgBordaPadrao {
     height: 400px; width: 750px; border-radius: 5%;
     border: 5px solid var(--cor-verde-agua);
     filter: drop-shadow(10px 10px 8px #5c5c5c); object-fit: cover;
