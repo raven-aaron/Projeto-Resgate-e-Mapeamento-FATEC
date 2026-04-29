@@ -1,0 +1,73 @@
+.main-adm-layout {
+    display: flex;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 20px;
+    width: 100%;
+    flex: 1;
+    gap: 30px;
+}
+
+.menu-adm-container {
+    width: 300px;
+    background-color: var(--cor-branco);
+    box-shadow: 0 4px 15px rgba(52, 136, 136, 0.1);
+    border-radius: 18px;
+    padding: 30px;
+    height: fit-content;
+    position: relative;
+    border: 1px solid rgba(52, 136, 136, 0.1);
+}
+
+.menu-topo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu-titulo {
+    font-size: 1.8em; font-weight: 800;
+    color: var(--cor-verde-agua);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--cor-verde-agua-claro);
+    padding-bottom: 15px;
+}
+
+.menu-links {
+    list-style: none; padding: 0; margin: 0;
+}
+.menu-links li { padding: 8px 0; }
+.menu-links a {
+    font-size: 1.05em;
+    color: var(--cor-escuro);
+    transition: all 0.2s;
+    display: block;
+    font-weight: 550;
+    text-decoration: none;
+}
+.menu-links .section-header a {
+    font-weight: 800;
+    color: var(--cor-verde-agua);
+    margin-top: 15px; margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 15;
+}
+.menu-links li:not(.section-header) a {
+    padding-left: 15px;
+    border-left: 3px solid transparent;
+}
+.menu-links li:not(.section-header) a:hover {
+    color: var(--cor-laranja);
+    border-left-color: var(--cor-laranja);
+    padding-left: 20px;
+}
+
+.conteudo-adm {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(52, 136, 136, 0.05);
+    min-height: 500px;
+}
