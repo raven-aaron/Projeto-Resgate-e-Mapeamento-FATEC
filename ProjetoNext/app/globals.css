@@ -4,29 +4,15 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  /* cores do html*/
   --cor-verde-agua: #348888;
-  --cor-verde-agua-claro: #d5f1ef;
   --cor-laranja: #FA7F08;
   --cor-escuro: #2d2d2d;
   --cor-cinza: #707070;
-  --cor-branco: #ffffff;
   --cor-vermelho: #F24405;
-  --cor-verde-petroleo: #348888; 
-  --cor-ciano-medio: #22BABB; 
-  --cor-ciano-claro:#9EF8EE; 
-  --cor-laranja-vibrante: #FA7F08; 
-  --cor-laranja-avermelhado: #f24405;        
-  --bnt-laranja-vibrante-80: rgba(250, 127, 8, 0.8);
+  --cor-ciano: #22BABB;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
+/* dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -34,21 +20,24 @@
   }
 }
 
-@font-face {
-  font-family: 'Outfit';
-  src: url('/assets/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+/* tailwind theme */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
+/* base */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Outfit', Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
 }
 
-/*do arquivo html*/
+/* reset */
 * {
-    font-family: 'Outfit', 'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
