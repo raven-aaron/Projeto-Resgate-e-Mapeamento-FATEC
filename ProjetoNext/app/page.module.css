@@ -257,11 +257,11 @@
     filter: drop-shadow(10px 10px 8px #5c5c5c); object-fit: cover;
 }
 
-.btn-custom {
+.btnCustom {
     color: white; font-weight: bold;
     filter: drop-shadow(3px 3px 3px #5c5c5c);
     background-color: var(--cor-laranja); margin: 10px; padding: 12px 25px;
     border-radius: 10px;
 }
-.btn-custom:hover { background-color: var(--cor-vermelho) !important; color: white !important; }
-.btn-custom:active { background-color: var(--cor-vermelho); color: white; }
+.btnCustom:hover { background-color: var(--cor-vermelho) !important; color: white !important; }
+.btnCustom:active { background-color: var(--cor-vermelho); color: white; }
