@@ -1,0 +1,232 @@
+.main {
+    padding-bottom: 50px;
+}
+
+.tituloPagina {
+    text-align: center;
+    padding: 40px 0 20px;
+    font-size: 2.5em;
+    color: var(--cor-verde-agua);
+    font-weight: 800;
+}
+
+.gridCartoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cartaoSolicitacao {
+    display: flex;
+    width: 45%;
+    min-width: 350px;
+    background-color: white;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px rgba(52, 136, 136, 0.15);
+    overflow: hidden;
+    border: 1px solid #eee;
+    transition: transform 0.3s;
+}
+
+.cartaoSolicitacao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(52, 136, 136, 0.25);
+}
+
+.infoCartao {
+    padding: 15px 20px;
+    flex-grow: 1;
+}
+
+.infoCartao h3 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Ajuste geral dos botões */
+.infoCartao :global(.btn-verde),
+.infoCartao :global(.btn-custom),
+.infoCartao :global(.botao-cancelar) {
+    padding: 6px 12px !important;
+    font-size: 0.8em !important;
+    margin: 0 !important;
+}
+
+/* Container do botão "SAIBA MAIS" */
+.infoCartao div {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 10px;
+}
+
+.infoCartao div :global(.btn) {
+    margin: 0 !important;
+}
+
+/* 👉 Correção: manter lado a lado com espaço */
+.infoCartao :global(.btn-custom) {
+    margin-right: 10px !important;
+}
+
+.statusPerdido {
+    color: var(--cor-vermelho);
+}
+
+.statusEncontrado {
+    color: var(--cor-verde-agua);
+}
+
+.nomePet {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--cor-escuro);
+}
+
+.dataRegistro {
+    font-size: 0.9em;
+    color: var(--cor-cinza);
+    margin-bottom: 15px;
+}
+
+.fotoPet {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+}
+
+.fotoPet img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.navegacaoPaginas {
+    text-align: center;
+    padding: 30px 0 50px;
+}
+
+.navegacaoPaginas a {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 0 5px;
+    border-radius: 50%;
+    color: var(--cor-verde-agua);
+    font-weight: bold;
+    transition: all 0.2s;
+    text-decoration: none;
+
+}
+
+
+.navegacaoPaginas a:hover {
+    background-color: var(--cor-verde-agua-claro);
+}
+
+.topoPagina {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botaoFiltro {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.botaoFiltro .material-symbols-rounded {
+    font-size: 32px;
+    color: var(--cor-verde-agua);
+}
+
+:global(.modalFiltro) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+
+:global(.overlay) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+
+:global(.conteudoModal) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 320px;
+    background: white;
+    padding: 25px;
+
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+:global(.grupoFiltro) { margin-bottom: 20px; }
+:global(.grupoFiltro p) { font-weight: bold; margin-bottom: 10px; }
+
+:global(.opcoesFiltro) { display: flex; gap: 10px; }
+
+:global(.opcao) {
+    border: 1px solid #ccc;
+    background: transparent;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+:global(.selecionado) {
+    background: var(--cor-verde-agua);
+    color: white;
+    border: none;
+}
+
+:global(.opcoesData) {
+    display: flex;
+    gap: 10px;
+}
+
+:global(.opcaoData) {
+    flex: 1;
+    border: 1px solid #ccc;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: var(--cor-escuro);
+}
+
+:global(.btnFiltrar) {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: var(--cor-laranja);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
