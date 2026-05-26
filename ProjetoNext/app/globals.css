@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
+<<<<<<< HEAD
     --cor-verde-agua: #348888;
     --cor-verde-agua-claro: #d5f1ef;
     --cor-laranja: #FA7F08;
@@ -20,9 +21,38 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+=======
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --cor-verde-agua: #348888;
+  --cor-laranja: #FA7F08;
+  --cor-escuro: #2d2d2d;
+  --cor-cinza: #707070;
+  --cor-vermelho: #F24405;
+  --cor-ciano: #22BABB;
 }
 
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+>>>>>>> 051d8cc176cc9ea9bc418c03bc8edef02867b1bb
+}
+
+/* tailwind theme */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* base */
 body {
+<<<<<<< HEAD
     background-color: #fbf9f7;
     color: var(--cor-escuro);
     min-height: 100vh;
@@ -278,4 +308,16 @@ a {
 .icone-social:hover { 
     background: var(--cor-verde-agua); 
     color: var(--cor-branco); 
+=======
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+>>>>>>> 051d8cc176cc9ea9bc418c03bc8edef02867b1bb
 }
