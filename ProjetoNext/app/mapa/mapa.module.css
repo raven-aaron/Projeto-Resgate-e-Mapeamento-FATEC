@@ -1,0 +1,175 @@
+.secao-mapa {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-color: #f0efeb;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.fundo-mapa {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: url('/assets/Mapa-VOTORANTIM.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.pin-card {
+  position: absolute;
+  z-index: 20;
+  transform: translate(-50%, -50%);
+  transition: z-index 0s linear 0.2s, transform 0.2s ease-out;
+  cursor: pointer;
+}
+
+.pin-card:hover {
+  z-index: 25;
+  transform: translate(-50%, -60%) scale(1.05);
+  transition-delay: 0s;
+}
+
+.card-mapa-interno {
+  width: 160px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  position: relative;
+}
+
+.card-mapa-interno::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+}
+
+.titulo-card-mapa {
+  font-size: 0.9em;
+  margin: 5px 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.foto-card-mapa {
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 8px;
+  display: block;
+  border: 2px solid #f0f0f0;
+}
+
+.texto-card-mapa {
+  font-size: 0.8em;
+  margin: 2px 0;
+  color: #555;
+  font-weight: 500;
+}
+
+.btn-card-mapa {
+  display: inline-block;
+  background-color: var(--cor-laranja);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 5px;
+  font-size: 0.7em;
+  margin-top: 6px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-card-mapa:hover {
+  background-color: var(--cor-vermelho);
+  color: white;
+}
+
+.status-perdido {
+  color: var(--cor-alerta);
+  font-weight: 700;
+}
+
+.status-encontrado {
+  color: var(--cor-verde-agua);
+  font-weight: 700;
+}
+
+.pin-card[data-status="perdido"] .titulo-card-mapa {
+  color: var(--cor-alerta);
+}
+
+.pin-card[data-status="encontrado"] .titulo-card-mapa {
+  color: var(--cor-verde-agua);
+}
+
+.icone-funil-mapa {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--cor-verde-agua);
+  cursor: pointer;
+  z-index: 30;
+  padding: 5px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.modal-filtro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.conteudo-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+}
+
+.conteudo-modal h4 {
+  color: var(--cor-verde-agua);
+  font-size: 1.2em;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.fechar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.conteudo-modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 300px;
+  z-index: 1000; 
+}

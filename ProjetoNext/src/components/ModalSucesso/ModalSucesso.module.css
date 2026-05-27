@@ -1,0 +1,26 @@
+.modalHeader {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+.modalBody {
+  padding: 35px !important;
+  text-align: center !important;
+}
+
+.tituloAlerta {
+  color: var(--cor-laranja, #ff7a00);
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.textoAlerta {
+  color: var(--cor-escuro, #334155);
+  font-size: 1.15em;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0;
+}

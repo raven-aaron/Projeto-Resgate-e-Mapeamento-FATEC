@@ -1,0 +1,44 @@
+.tituloFormulario {
+  color: var(--cor-verde-agua);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.containerBotoes {
+  display: flex;
+  gap: 15px;
+  margin-top: 24px;
+}
+
+.wrapperBtn {
+  display: inline-block;
+}
+
+.wrapperBtn button {
+  padding: 12px 28px !important;
+  font-weight: 700 !important;
+  font-size: 1em !important;
+  border-radius: 8px !important;
+  border: none !important;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btnCancelar button {
+  background-color: #6c757d !important;
+  color: var(--cor-branco, #ffffff) !important;
+}
+
+.btnCancelar button:hover {
+  background-color: #5a6268 !important;
+}
+
+.btnSalvar button {
+  background-color: var(--cor-laranja) !important;
+  color: var(--cor-branco, #ffffff) !important;
+}
+
+.btnSalvar button:hover {
+  background-color: #e07b00 !important;
+}

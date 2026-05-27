@@ -1,0 +1,246 @@
+.main {
+  padding-bottom: 50px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.tituloPagina {
+  text-align: center;
+  padding: 40px 0 10px;
+  font-size: 2.5em;
+  color: var(--cor-verde-agua);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.topoPagina {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  padding: 0 5%;
+}
+
+.botaoFiltro {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: var(--cor-verde-agua);
+}
+
+.botaoFiltro span {
+  font-size: 28px;
+}
+
+.gridCartoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+  padding: 20px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cartaoAnimal {
+  background-color: var(--cor-branco, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid #f1f5f9;
+  min-height: 420px;
+}
+
+.cartaoAnimal:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(52, 136, 136, 0.15);
+}
+
+.fotoAnimal {
+  width: 100%;
+  height: 240px;
+  position: relative;
+}
+
+.fotoAnimal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.infoAnimal {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.nomePet {
+  font-size: 1.5em;
+  font-weight: 800;
+  color: var(--cor-verde-agua);
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+}
+
+.especiePet {
+  font-size: 0.95em;
+  color: #64748b;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.labelStatus {
+  font-size: 1em;
+  color: #334155;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+}
+
+.statusPerdido {
+  color: var(--cor-vermelho);
+  font-weight: 800;
+}
+
+.statusEncontrado {
+  color: var(--cor-verde-agua);
+  font-weight: 800;
+}
+
+.wrapperBtn {
+  width: 100%;
+  max-width: 180px;
+  margin-top: auto;
+}
+
+.wrapperBtn button {
+  background-color: var(--cor-laranja) !important;
+  color: var(--cor-branco, #ffffff) !important;
+  font-weight: 700 !important;
+  width: 100% !important;
+  border: none;
+  padding: 10px 0 !important;
+  border-radius: 8px !important;
+  cursor: pointer;
+}
+
+.navegacaoPaginas {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.navegacaoPaginas a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 50%;
+  color: var(--cor-verde-agua);
+  font-weight: bold;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.navegacaoPaginas a:hover,
+.navegacaoPaginas .atual {
+  background-color: var(--cor-verde-agua-claro);
+  color: var(--cor-verde-agua);
+}
+
+.overlayFiltro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+}
+
+.modalFiltro {
+  background-color: var(--cor-branco, #ffffff);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tituloFiltro {
+  color: var(--cor-verde-agua);
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 15px 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.secaoFiltro {
+  margin-bottom: 25px;
+}
+
+.subtituloFiltro {
+  color: #555555;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.opcaoFiltro {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333333;
+}
+
+.opcaoFiltro input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--cor-verde-agua);
+  cursor: pointer;
+}
+
+.btnAplicarFiltro {
+  width: 100%;
+}
+
+.btnAplicarFiltro button {
+  background-color: var(--cor-laranja) !important;
+  color: var(--cor-branco, #ffffff) !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  text-transform: uppercase;
+  width: 100% !important;
+  border: none;
+  padding: 12px 0 !important;
+  border-radius: 8px !important;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .gridCartoes {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}

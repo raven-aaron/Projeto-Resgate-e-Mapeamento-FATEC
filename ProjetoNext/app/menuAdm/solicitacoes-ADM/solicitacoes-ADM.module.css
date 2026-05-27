@@ -1,0 +1,282 @@
+.main {
+  padding-bottom: 50px;
+}
+
+.tituloPagina {
+  text-align: center;
+  padding: 40px 0 20px;
+  font-size: 2.5em;
+  color: var(--cor-verde-agua);
+  font-weight: 800;
+}
+
+.topoPagina {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  padding: 0 5%;
+}
+
+.botaoFiltro {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.botaoFiltro span {
+  font-size: 36px;
+  color: var(--cor-verde-agua);
+}
+
+.gridCartoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cartaoSolicitacao {
+  display: flex;
+  width: 45%;
+  min-width: 350px;
+  background-color: var(--cor-branco, #ffffff);
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(52, 136, 136, 0.15);
+  overflow: hidden;
+  border: 1px solid #eee;
+  transition: transform 0.3s;
+}
+
+.cartaoSolicitacao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(52, 136, 136, 0.25);
+}
+
+.infoCartao {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.statusPerdido {
+  color: var(--cor-vermelho);
+  font-size: 1.5em;
+  font-weight: 800;
+  margin: 0 0 5px 0;
+}
+
+.statusEncontrado {
+  color: var(--cor-verde-agua);
+  font-size: 1.5em;
+  font-weight: 800;
+  margin: 0 0 5px 0;
+}
+
+.nomePet {
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  color: var(--cor-escuro);
+}
+
+.dataRegistro {
+  font-size: 0.9em;
+  color: var(--cor-cinza);
+  margin: 0 0 5px 0;
+}
+
+.machucado {
+  color: var(--cor-vermelho);
+  font-weight: 700;
+  font-size: 0.9em;
+  margin: 0 0 15px 0;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.botoesAcao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 7px;
+  margin-top: auto;
+}
+
+.wrapperBtn {
+  display: inline-block;
+  width: 105%;
+}
+
+.wrapperBtn button {
+  padding: 6px 10px !important;
+  font-size: 0.85em !important;
+  margin: 0 !important;
+  cursor: pointer;
+  width: 105%;
+}
+
+.btnSaibaMais {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.btnSaibaMais button {
+  background-color: var(--cor-verde-agua) !important;
+  color: var(--cor-branco, #ffffff) !important;
+  border: none;
+}
+
+.btnAceitar {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.btnAceitar button {
+  background-color: var(--cor-laranja) !important;
+  color: var(--cor-branco, #ffffff) !important;
+  border: none;
+}
+
+.btnNegar {
+  grid-column: -5;
+  grid-row: 2;
+}
+
+.btnNegar button {
+  background-color: #ff0019 !important;
+  border: none;
+  color: white !important;
+}
+
+.btnNegar button:hover {
+  background-color: #9b111E !important;
+}
+
+.fotoPet {
+  width: 170px;
+  height: auto;
+  position: relative;
+}
+
+.fotoPet img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.navegacaoPaginas {
+  text-align: center;
+  padding: 30px 0 50px;
+}
+
+.navegacaoPaginas a {
+  display: inline-block;
+  padding: 8px 14px;
+  margin: 0 5px;
+  border-radius: 50%;
+  color: var(--cor-verde-agua);
+  font-weight: bold;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.navegacaoPaginas a:hover,
+.navegacaoPaginas .atual {
+  background-color: var(--cor-verde-agua-claro);
+}
+
+.overlayFiltro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+}
+
+.modalFiltro {
+  background-color: var(--cor-branco, #ffffff);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.tituloFiltro {
+  color: var(--cor-verde-agua);
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 15px 0;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.secaoFiltro {
+  margin-bottom: 25px;
+}
+
+.subtituloFiltro {
+  color: #555555;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.opcaoFiltro {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333333;
+}
+
+.opcaoFiltro input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--cor-verde-agua);
+  cursor: pointer;
+}
+
+.btnAplicarFiltro {
+  width: 100%;
+}
+
+.btnAplicarFiltro button {
+  background-color: var(--cor-laranja) !important;
+  color: var(--cor-branco, #ffffff) !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  text-transform: uppercase;
+  width: 100% !important;
+  border: none;
+  padding: 12px 0 !important;
+  border-radius: 8px !important;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .cartaoSolicitacao {
+    width: 100%;
+  }
+}

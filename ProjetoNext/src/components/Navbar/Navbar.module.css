@@ -1,0 +1,153 @@
+.containerFluid {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.barraAcessibilidade {
+    background: var(--cor-ciano-claro);
+    padding: 8px 0;
+}
+
+.flexAcessibilidade {
+    display: flex;
+    gap: 10px;
+}
+
+.btnAcessibilidade {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 2px solid var(--cor-vermelho);
+    background: var(--cor-branco);
+    color: var(--cor-vermelho);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnContraste {
+    position: relative;
+    overflow: hidden;
+}
+
+.btnContraste::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: var(--cor-vermelho);
+}
+
+.cabecalho {
+    background: var(--cor-branco);
+    padding: 25px 0;
+}
+
+.gridCabecalho {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: center;
+}
+
+.buscaWrapper {
+    display: flex;
+    max-width: 500px;
+    justify-self: center;
+    width: 100%;
+    gap: 10px; 
+}
+
+.btnBuscar {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px; 
+    background: var(--cor-verde-petroleo);
+    color: var(--cor-branco);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.inputBusca {
+    flex: 1;
+    height: 44px;
+    border: 1px solid #ced4da; 
+    border-radius: 8px; 
+    padding: 0 15px;
+    outline: none;
+}
+
+.navegacao {
+    background: var(--cor-branco);
+    border-bottom: 3px solid rgba(52, 136, 136, 0.15);
+}
+
+.flexNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.navEsquerda {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.btnMenu {
+    background: var(--cor-verde-agua);
+    color: var(--cor-verde-agua-claro);
+    border: none;
+    border-radius: 18px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 14px rgba(52, 136, 136, 0.35);
+    min-width: 70px;
+    height: 60px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.barraNav {
+    background: #9EF8EE;
+    border-radius: 18px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: -15px;
+    height: 45px;
+    z-index: 0;
+}
+
+.linkNav {
+    color: var(--cor-escuro);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.redesSociais {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.iconeSocial {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--cor-verde-agua);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-verde-agua);
+}

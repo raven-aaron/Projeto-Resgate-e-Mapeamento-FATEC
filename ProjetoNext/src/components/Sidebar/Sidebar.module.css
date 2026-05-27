@@ -1,0 +1,82 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    display: none;
+}
+
+.overlayVisible {
+    display: block;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--cor-branco);
+    z-index: 999;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebarOpen {
+    left: 0;
+}
+
+.headerMenu {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-verde-agua-claro);
+}
+
+.badgeMenu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--cor-verde-agua);
+    font-weight: 700;
+}
+
+.btnClose {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.conteudo {
+    padding: 20px;
+}
+
+.tituloMenu {
+    font-size: 0.8rem;
+    color: var(--cor-cinza);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.listaMenu {
+    list-style: none;
+    padding: 0;
+}
+
+.itemMenu {
+    margin-bottom: 15px;
+}
+
+.linkMenu {
+    color: var(--cor-escuro);
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
