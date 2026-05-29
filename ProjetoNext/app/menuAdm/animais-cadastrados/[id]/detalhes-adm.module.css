@@ -1,0 +1,166 @@
+.main {
+  padding-bottom: 60px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.containerFicha {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.cardDetalhes {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #f1f5f9;
+}
+
+.colunaFoto {
+  position: relative;
+  height: 100%;
+  min-height: 500px;
+}
+
+.fotoPet {
+  object-fit: cover;
+}
+
+.badgeStatus {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.colunaInfo {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nomePet {
+  color: var(--cor-verde-agua);
+  font-size: 2.5em;
+  font-weight: 900;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.idPet {
+  color: #94a3b8;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.gridInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.itemInfo label {
+  display: block;
+  font-size: 0.75em;
+  font-weight: 800;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.itemInfo p {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--cor-escuro);
+  margin: 0;
+}
+
+.areaObservacoes {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.areaObservacoes h4 {
+  font-size: 0.8em;
+  font-weight: 800;
+  color: #64748b;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.areaObservacoes p {
+  font-style: italic;
+  color: #475569;
+}
+
+.containerAcoes {
+  margin-top: auto;
+  display: flex;
+  gap: 15px;
+}
+
+.btnAcao {
+  flex: 1;
+}
+
+.btnEditar button {
+  background-color: var(--cor-laranja, #ff7a00) !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: 700 !important;
+  width: 100% !important;
+}
+
+.btnEditar button:hover {
+  background-color: #e07b00 !important;
+}
+
+.btnExcluir button {  
+  background-color: #ff0019;
+  color: #fff !important;
+  border: none !important;
+  font-weight: 700 !important;
+  width: 100% !important;
+}
+
+.btnExcluir button:hover {
+  background-color: #9b111E;
+}
+
+.selectMotivo {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-weight: 600;
+  color: var(--cor-escuro);
+  margin-top: 15px;
+  outline: none;
+}
+
+.selectMotivo:focus {
+  border-color: var(--cor-laranja);
+}
+
+@media (max-width: 768px) {
+  .cardDetalhes {
+    grid-template-columns: 1fr;
+  }
+  .colunaFoto {
+    min-height: 300px;
+  }
+}

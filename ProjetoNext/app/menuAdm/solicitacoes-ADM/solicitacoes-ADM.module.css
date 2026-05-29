@@ -1,0 +1,18 @@
+.main { padding-bottom: 50px; }
+.tituloPagina { text-align: center; padding: 40px 0 20px; font-size: 2.5em; color: var(--cor-verde-agua); font-weight: 800; }
+.gridCartoes { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px 5%; max-width: 1200px; margin: 0 auto; }
+.cartaoSolicitacao { display: flex; width: 45%; min-width: 350px; background-color: #ffffff; border-radius: 18px; box-shadow: 0 4px 15px rgba(52, 136, 136, 0.15); overflow: hidden; border: 1px solid #eee; }
+.infoCartao { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.statusPerdido { color: var(--cor-vermelho); font-size: 1.5em; font-weight: 800; margin: 0 0 5px 0; }
+.statusEncontrado { color: var(--cor-verde-agua); font-size: 1.5em; font-weight: 800; margin: 0 0 5px 0; }
+.nomePet { font-size: 1.3em; font-weight: 700; margin: 0 0 5px 0; color: #333; }
+.dataRegistro { font-size: 0.9em; color: #6c757d; margin: 0 0 15px 0; }
+.botoesAcao { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-top: auto; }
+.wrapperBtn { width: 100%; max-width: 200px; }
+.wrapperBtn button { width: 100% !important; padding: 4px !important; border: none !important; color: #ffffff !important; }
+.btnSaibaMais button { background-color: var(--cor-verde-agua) !important; }
+.btnAceitar button { background-color: var(--cor-laranja) !important; }
+.btnNegar button { background-color: #ff0019 !important; }
+.fotoPet { width: 170px; height: auto; position: relative; }
+.fotoPet img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.btnOk button { background-color: var(--cor-laranja) !important; color: #ffffff !important; border: none !important; }

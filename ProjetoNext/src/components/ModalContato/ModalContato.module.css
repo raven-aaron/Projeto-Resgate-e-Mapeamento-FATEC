@@ -1,0 +1,70 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.modalContent {
+    background: var(--cor-branco);
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    padding: 30px 40px 50px 40px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    animation: zoomIn 0.2s ease-out;
+}
+
+.btnClose {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 36px;
+    color: var(--cor-cinza);
+    cursor: pointer;
+    line-height: 1;
+}
+
+.body {
+    text-align: center;
+}
+
+.titulo {
+    color: var(--cor-verde-agua);
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 25px;
+    margin-top: 20px;
+    color: var(--cor-escuro);
+}
+
+.valor {
+    font-size: 25px;
+    color: var(--cor-escuro);
+    margin-top: 5px;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

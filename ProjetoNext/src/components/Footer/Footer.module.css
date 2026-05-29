@@ -1,0 +1,104 @@
+.rodape {
+    width: 100%;
+}
+
+.rodapeTopo {
+    background-color: #9EF8EE;
+    padding: 24px 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.gridTopo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoEsquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.linksRapidos {
+    display: flex;
+    gap: 20px;
+}
+
+.linkItem {
+    color: var(--cor-escuro);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.contatoTexto {
+    color: var(--cor-escuro);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.contatoTexto .materialSymbols {
+    color: var(--cor-verde-agua);
+    font-size: 18px;
+}
+
+.logosDireita {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.logoDepartamento {
+    width: 120px;
+    height: auto;
+}
+
+.logoPrefeitura {
+    width: 100px;
+    height: auto;
+}
+
+.rodapeBase {
+    background-color: var(--cor-verde-agua);
+    color: white;
+    padding: 12px 0;
+}
+
+.flexBase {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textoRedes {
+    font-size: 0.9rem;
+}
+
+.listaSociais {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.iconeSocial {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.iconeSocial:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

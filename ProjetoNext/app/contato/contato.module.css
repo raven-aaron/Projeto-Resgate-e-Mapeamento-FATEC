@@ -1,0 +1,144 @@
+.main {
+  padding-bottom: 60px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.tituloPagina {
+  text-align: center;
+  padding: 40px 0 10px;
+  font-size: 2.5em;
+  color: var(--cor-verde-agua);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contatoWrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.cardInformacoes {
+  background: var(--cor-branco, #ffffff);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(52, 136, 136, 0.06);
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.linhaContato {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.iconeContato {
+  font-size: 32px;
+  color: var(--cor-verde-agua);
+}
+
+.textoContato {
+  font-size: 1.05em;
+  color: var(--cor-escuro);
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.mapaContainer {
+  width: 100%;
+  height: 280px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  margin-top: 10px;
+}
+
+.mapaContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.cardFormulario {
+  background: var(--cor-branco, #ffffff);
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(52, 136, 136, 0.06);
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloFormulario {
+  font-size: 1.35em;
+  color: var(--cor-verde-agua);
+  font-weight: 800;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+.labelCampo {
+  font-size: 0.95em;
+  font-weight: 700;
+  color: #64748b;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.textareaContato {
+  width: 100%;
+  height: 220px;
+  padding: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: var(--cor-escuro);
+  font-size: 1em;
+  outline: none;
+  resize: none;
+  font-weight: 600;
+  margin-bottom: 24px;
+  transition: border-color 0.2s ease;
+}
+
+.textareaContato:focus {
+  border-color: var(--cor-verde-agua);
+}
+
+.wrapperBtn {
+  width: 100%;
+}
+
+.wrapperBtn button {
+  background-color: var(--cor-laranja) !important;
+  color: var(--cor-branco, #ffffff) !important;
+  font-weight: 700 !important;
+  font-size: 1.1em !important;
+  text-transform: uppercase;
+  width: 100% !important;
+  border: none;
+  padding: 14px 0 !important;
+  border-radius: 8px !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.wrapperBtn button:hover {
+  background-color: #e07b00 !important;
+}
+
+@media (max-width: 968px) {
+  .contatoWrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}

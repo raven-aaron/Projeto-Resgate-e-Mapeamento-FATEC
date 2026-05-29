@@ -1,0 +1,207 @@
+.main {
+  padding-bottom: 50px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.tituloPagina {
+  text-align: center;
+  padding: 40px 0 20px;
+  font-size: 2.5em;
+  color: var(--cor-verde-agua);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.containerFiltros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: var(--cor-branco, #ffffff);
+  padding: 20px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  border: 1px solid #f1f5f9;
+}
+
+.grupoFiltro {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grupoFiltro label {
+  font-size: 0.85em;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.grupoFiltro select {
+  padding: 10px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: var(--cor-escuro);
+  font-size: 1em;
+  outline: none;
+  min-width: 220px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: border-color 0.2s ease;
+}
+
+.grupoFiltro select:focus {
+  border-color: var(--cor-verde-agua);
+}
+
+.gridKpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 5%;
+}
+
+.cardKpi {
+  background: var(--cor-branco, #ffffff);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(52, 136, 136, 0.06);
+  border: 1px solid #f1f5f9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.valorKpi {
+  font-size: 2.8em;
+  font-weight: 800;
+  color: var(--cor-verde-agua);
+  margin: 0 0 4px 0;
+}
+
+.tituloKpi {
+  font-size: 0.95em;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.containerGraficos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.cardGrafico {
+  background: var(--cor-branco, #ffffff);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(52, 136, 136, 0.06);
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tituloGrafico {
+  font-size: 1.3em;
+  color: var(--cor-escuro);
+  font-weight: 800;
+  margin: 0 0 24px 0;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.linhaGrafico {
+  margin-bottom: 20px;
+}
+
+.infoLinha {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 6px;
+  font-size: 0.95em;
+}
+
+.barraCompleta {
+  height: 16px;
+  background: #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.barraProgresso {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.4s ease-in-out;
+}
+
+.corLaranja {
+  background-color: var(--cor-laranja);
+}
+
+.corVerdeAgua {
+  background-color: var(--cor-verde-agua);
+}
+
+.corVermelho {
+  background-color: var(--cor-vermelho);
+}
+
+.listaBairros {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.itemBairro {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nomeBairro {
+  width: 150px;
+  font-size: 0.95em;
+  font-weight: 700;
+  color: #334155;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.quantidadeBairro {
+  font-size: 0.95em;
+  font-weight: 800;
+  color: var(--cor-escuro);
+  width: 40px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .containerGraficos {
+    grid-template-columns: 1fr;
+  }
+  .containerFiltros {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+  }
+}
